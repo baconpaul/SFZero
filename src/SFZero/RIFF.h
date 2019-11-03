@@ -1,7 +1,8 @@
 #ifndef RIFF_h
 #define RIFF_h
 
-#include "../JuceLibraryCode/JuceHeader.h"
+// #include "../JuceLibraryCode/JuceHeader.h"
+#include "JuceSubstitution.h"
 #include "WinTypes.h"
 
 
@@ -17,7 +18,7 @@ struct RIFFChunk {
 	fourcc	id;
 	dword 	size;
 	Type  	type;
-	int64  	start;
+	int64_t  	start;
 
 	void	ReadFrom(InputStream* file);
 	void	Seek(InputStream* file);

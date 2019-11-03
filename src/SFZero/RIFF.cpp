@@ -5,19 +5,19 @@ using namespace SFZero;
 
 void RIFFChunk::ReadFrom(InputStream* file)
 {
-	file->read(&id, sizeof(fourcc));
+	file->read(&(id[0]), sizeof(fourcc));
 	size = (dword) file->readInt();
 	start = file->getPosition();
 
 	if (FourCCEquals(id, "RIFF")) {
 		type = RIFF;
-		file->read(&id, sizeof(fourcc));
+		file->read(&(id[0]), sizeof(fourcc));
 		start += sizeof(fourcc);
 		size -= sizeof(fourcc);
 		}
 	else if (FourCCEquals(id, "LIST")) {
 		type = LIST;
-		file->read(&id, sizeof(fourcc));
+		file->read(&(id[0]), sizeof(fourcc));
 		start += sizeof(fourcc);
 		size -= sizeof(fourcc);
 		}

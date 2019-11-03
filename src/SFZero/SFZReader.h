@@ -1,7 +1,7 @@
 #ifndef SFZReader_h
 #define SFZReader_h
 
-#include "../JuceLibraryCode/JuceHeader.h"
+// #include "../JuceLibraryCode/JuceHeader.h"
 
 namespace SFZero {
 

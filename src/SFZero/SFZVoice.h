@@ -1,7 +1,7 @@
 #ifndef SFZVoice_h
 #define SFZVoice_h
 
-#include "../JuceLibraryCode/JuceHeader.h"
+// #include "../JuceLibraryCode/JuceHeader.h"
 #include "SFZEG.h"
 
 namespace SFZero {

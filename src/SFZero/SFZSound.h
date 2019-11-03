@@ -1,7 +1,7 @@
 #ifndef SFZSound_h
 #define SFZSound_h
 
-#include "../JuceLibraryCode/JuceHeader.h"
+// #include "../JuceLibraryCode/JuceHeader.h"
 #include "SFZRegion.h"
 
 
